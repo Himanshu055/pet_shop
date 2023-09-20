@@ -1,0 +1,92 @@
+.customer-list {
+    max-height: 500px; /* Set a maximum height to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+  }
+  
+  .customer-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #f5f6fa;
+  }
+  
+  .customer-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .customer-details h3 {
+    margin: 0;
+  }
+  
+  .customer-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  /* CustomerList.css */
+
+.button {
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.remove-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end; /* Ensure buttons align to the left side */
+  gap: 10px; /* Add gap between buttons */
+  align-items: center; 
+  margin-left: 70%;
+}
+
+/* Style for Font Awesome icons */
+.button i {
+  margin-right: 5px;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+.add-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #219653;
+  opacity: 0.9;
+}
+.total-records {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #d7d9e4; /* Add background color */
+  font-size: 14px;
+  color: #252424;
+  text-align: center;
+}
+

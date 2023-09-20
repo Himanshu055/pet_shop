@@ -1,0 +1,33 @@
+/* NavBar.css */
+.logo {
+  height: auto;
+}
+
+.home:hover,
+.animal:hover,
+.dashlink:hover {
+  color: orange;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .flex {
+    justify-content: space-around;
+  }
+
+  .logo {
+    width: 100px;
+    margin-bottom: 2%;
+  }
+
+  .home,
+  .animal,
+  .dashlink {
+    font-size: 14px;
+  }
+}

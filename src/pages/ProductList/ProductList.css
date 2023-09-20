@@ -1,0 +1,55 @@
+
+.food_strip {
+  max-width: 80%;
+  height: auto;
+  margin-top: 15%;
+  display: block; 
+  margin: 0 auto; 
+  border-radius: 50px; 
+}
+
+
+
+.product-list {
+  display: flex;
+ 
+  /* flex-wrap: wrap; */
+  padding: 40px 0;
+}
+.all_data{
+  margin-top: 5%;
+}
+.product-list-container {
+  text-align: center;
+  padding: 5px; 
+}
+.HPB_100 {
+  margin-top: 3%;
+}
+
+.heading {
+  color: white; 
+  margin: 20px 0; 
+  
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+
+  justify-content: center;
+margin-top: -5%;;
+  
+}
+
+
+@media (max-width: 768px) {
+  .product-list {
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .food_strip {
+    margin-top: 20px;
+  }
+}

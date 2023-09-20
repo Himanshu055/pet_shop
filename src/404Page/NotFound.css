@@ -1,0 +1,16 @@
+.not-found-container {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    height: 100vh;
+    background-color: #f1f1f1; /* Adding a background color for contrast */
+  }
+  
+  .not-found-gif {
+    max-width: 50%; /* Set the maximum width to 50% */
+    height: auto;
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally using margin */
+    cursor: pointer; /* Keep the pointer cursor */
+  }
+  

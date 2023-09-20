@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+  overflow-x: hidden;
+  background-image: url('https://codemyui.com/wp-content/uploads/2019/06/Shooting-Star-Background-in-Pure-CSS-1.gif'); /* Replace with your image URL */
+  background-size: cover; /* Adjust based on your image size */
+  background-attachment: fixed; /* Keeps the background fixed */
+  animation: slide 10s infinite; /* Apply animation (name, duration, iteration) */
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+

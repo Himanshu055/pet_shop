@@ -1,0 +1,36 @@
+.NewCollectionTypes {
+    margin: 20px 0;
+  }
+  
+  .swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+  }
+  
+  .swiper-slide {
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .type_flt_img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .type_flt_title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  
+  

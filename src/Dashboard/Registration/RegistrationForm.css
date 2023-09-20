@@ -1,0 +1,71 @@
+/* RegistrationForm.css */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registration-form {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 400px; /* Set a max-width to prevent overly wide forms */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h2 {
+  margin: 0 0 15px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.error-message {
+  color: #d9534f;
+  margin-top: 5px;
+}
+
+/* Responsive adjustments */
+
+/* Tablets and larger screens */
+@media screen and (min-width: 768px) {
+  .registration-form {
+    width: 70%;
+  }
+}
+
+/* Desktop screens */
+@media screen and (min-width: 1200px) {
+  .registration-form {
+    width: 50%;
+  }
+}

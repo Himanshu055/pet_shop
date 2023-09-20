@@ -1,0 +1,82 @@
+/* LoginForm.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px); /* Subtract height of navbar and footer */
+}
+
+.login-form {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 400px; /* Set a max-width to prevent overly wide forms */
+  text-align: center;
+  margin: 0 auto; /* Center the form horizontally on smaller screens */
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%; /* Make the button full width on smaller screens */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+
+/* Tablets and larger screens */
+@media screen and (min-width: 768px) {
+  .login-form {
+    width: 70%;
+  }
+}
+
+/* Desktop screens */
+@media screen and (min-width: 1200px) {
+  .login-form {
+    width: 50%;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 576px) {
+  .login-form {
+    width: 90%;
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+}

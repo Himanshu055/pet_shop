@@ -1,0 +1,44 @@
+/* In ProductCard.css */
+
+/* Adjust the image alignment and width */
+
+.page-width-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.HPB_img_outer {
+  display: inline-block; /* Align the image inline */
+  width: 70%; /* Adjust the image width as needed */
+  text-align: center; /* Center-align the content */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Style the image */
+.HPB_img_outer img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+ 
+  border-radius: 10px; /* Add border-radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style the heading */
+.HPB_heading_outer h3 {
+  font-family: 'Roboto', sans-serif; /* Change the font family */
+  font-weight: 700; /* Change the font weight */
+  font-size: 1.8rem; /* Change the font size */
+  color: #fff; /* Change the text color */
+}
+
+/* Style the product title */
+.HPB_img_outer h4 {
+  font-family: 'Roboto', sans-serif; /* Change the font family */
+  font-weight: 400; /* Change the font weight */
+  font-size: 1.4rem; /* Change the font size */
+  color: #555; /* Change the text color */
+  margin-top: 10px; /* Add margin as needed */
+}

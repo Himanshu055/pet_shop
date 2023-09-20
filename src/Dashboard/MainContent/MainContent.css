@@ -1,0 +1,48 @@
+.main-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* margin-left: 5%; Remove this line */
+  width: 90%;
+  height: 95%;
+  margin-top: 1%;
+  margin-left: 6; /* Add this line to push content to the right */
+}
+
+
+
+.graph {
+  margin-bottom: 20px;
+}
+
+.graph img {
+  width: 100%;
+  height: auto;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.summary-item {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f5f6fa;
+}
+
+.summary-item h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.summary-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #6c757d;
+}

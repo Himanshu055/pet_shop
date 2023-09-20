@@ -1,0 +1,78 @@
+/* Sidebar.css */
+
+.sidebar {
+    display: flex;
+    border-radius: 5px;
+    height: 95%;
+    margin-top: 1%;
+  }
+  
+  .q-drawer {
+    width: 200px;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+  
+  .q-drawer.open {
+    transform: translateX(0);
+  }
+  
+  .q-scroll-area {
+    padding: 10px;
+  }
+  
+  .q-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .q-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .q-item.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .q-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .sidebar-toggle {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  
+
+  .user-avatar {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: #333; /* Adjust the background color as needed */
+    color: white;
+  }
+  
+  .avatar {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  
+  .username {
+    font-size: 16px;
+    font-weight: bold;
+  }

@@ -1,0 +1,30 @@
+/* Basic styling for the PetList component */
+.container {
+    margin-top: 20px;
+  }
+  
+  .dogsection{
+    margin-top: -5%;
+  }
+
+  .text-center {
+    /* Center-align text in the text-center class */
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  
+  /* Medium screens and larger */
+  @media screen and (min-width: 768px) {
+    .grid-cols-1 {
+      grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns */
+    }
+  }
+  
+  /* Extra large screens */
+  @media screen and (min-width: 1200px) {
+    .grid-cols-1 {
+      grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns */
+    }
+  }
+  

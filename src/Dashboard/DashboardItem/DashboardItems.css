@@ -1,0 +1,29 @@
+.dashboard-items {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dashboard-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f5f6fa;
+  }
+  
+  .item-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .item-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .item-value {
+    font-size: 18px;
+  }
+  
