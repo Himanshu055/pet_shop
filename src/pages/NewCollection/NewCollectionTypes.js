@@ -25,9 +25,9 @@ const NewCollectionTypes = () => {
           <div className="swiper-slide NCL_6">
             <a href="#">
               <p className="type_flt_img">
-                <img src="https://headsupfortails.com/cdn/shop/files/personalised_icon_812c5a4b-f70a-4cf7-a8aa-d8d2fc56a8d2.png?v=1694609728" alt="Personalised Beds" />
+                <img src="https://headsupfortails.com/cdn/shop/files/cat_toys_icon_5b805310-c957-4ef0-951f-105e222bd74a.png?v=1694609661" alt="Personalised Beds" />
               </p>
-              <p className="type_flt_title">Personalised</p>
+              <p className="type_flt_title">Cat toys</p>
             </a>
           </div>
            <div className="swiper-slide NCL_6">

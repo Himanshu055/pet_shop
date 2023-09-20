@@ -50,10 +50,10 @@ function Home() {
         <div className="product-item">
           <a href="https://headsupfortails.com/collections/harnesses">
             <img
-              src="https://headsupfortails.com/cdn/shop/files/c5_cat_furniture.png?v=1694493183"
+              src="https://headsupfortails.com/cdn/shop/files/c7_toys.png?v=1694493183"
               alt="Harnesses"
             />
-            <h4>Cat Furniture</h4>
+            <h4>Toys</h4>
           </a>
 
           

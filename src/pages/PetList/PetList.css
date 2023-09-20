@@ -1,16 +1,41 @@
 /* PetList.css */
 
-/* Add a general style for the card-link (optional) */
+
 .card-link {
   text-decoration: none;
   color: inherit;
 }
-
 .dogsection{
   margin-top: -7%;
 }
-/* Style for the card container */
+/* CSS for the sale badge */
+/* Add styles for the badge */
+.product-label {
+  position: absolute;
+  margin-top: -5px;
+  /* left: 10px; Adjust right position as needed */
+  margin-left:-48%;
+  background-color: grey;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  /* display: block; */
+  font-size: 0.7rem;
+  font-weight: bold;
+  pointer-events: none; /* Disable mouse events on the badge */
+  user-select: none; /* Disable text selection */
+  white-space: nowrap; /* Prevent label from breaking into a new line */
+}
+
+/* Style the inner span */
+.product-label span {
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+/* Style for the card */
 .card {
+  position: relative; /* Make the card a positioning context for absolute elements */
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -26,8 +51,8 @@
 /* Style for the card image */
 .card-image {
   width: 100%;
-  height: 200px; /* Add a fixed height for all images */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  height: 200px;
+  object-fit: cover;
 }
 
 /* Style for the card content */
@@ -49,18 +74,16 @@
   margin: 0;
 }
 
-/* Responsive adjustments */
-
 /* Medium screens and larger */
 @media screen and (min-width: 768px) {
   .grid-cols-1 {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 /* Extra large screens */
 @media screen and (min-width: 1200px) {
   .grid-cols-1 {
-    grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

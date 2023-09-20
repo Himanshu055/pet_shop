@@ -135,7 +135,7 @@
 /* Responsive adjustments */
 @media (max-width: 998px) {
   .hero {
-    padding: 100px 0; /* Reduce padding on smaller screens */
+    padding: 60px 0; /* Reduce padding on smaller screens */
   }
 
   .hero h2 {
@@ -156,7 +156,7 @@
   }
 
   .product-container {
-    max-width: 90%; /* Adjust the container width for smaller screens */
+    max-width: 100%; /* Adjust the container width for smaller screens */
   }
 
   .product-item {
