@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './PetList.css'
 
+
+
+
 export default function PetList() {
   const [dogs, setDogs] = useState([]);
   const [text, setText] = useState("");
@@ -76,78 +79,47 @@ export default function PetList() {
   }, [isLoading, searched, displayedItems, dogs]);
 
   return (
-  
-          <>
+    <>
+      {!dogs ? (
+        <h1 className="flex items-center justify-center text-white text-center px-5 text-3xl h-screen font-bold uppercase">
+          Loading...
+        </h1>
+      ) : (
+        <>
+          <section className="p-8 max-w-7xl mx-auto dogsection">
+            <div className="text-center">
+              {/* Add a search bar here if needed */}
+            </div>
 
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 my-10 lg:my-20">
+              {dogs.map((dog) => (
+                <Link
+                  to={`/${dog.name}`}
+                  key={dog.id}
+                  className="card-link"
+                >
+                  <article className="card">
+                    <img
+                      src={dog.reference_image_id ? `https://cdn2.thedogapi.com/images/${dog.reference_image_id}.jpg` : ''}
+                      alt={dog.name}
+                      loading="lazy"
+                      className="card-image"
+                    />
+                    <div className="card-content">
+                      <h3 className="card-title">
+                        {dog.name}
+                      </h3>
+                    </div>
+                  </article>
+                </Link>
+              ))}
+            </div>
+          </section>
+        </>
+      )}
+    </>
+  );
 
-
-            {!dogs ? (
-              <h1 className="flex items-center justify-center text-white text-center px-5 text-3xl h-screen font-bold uppercase">
-                Loading...
-              </h1>
-            ) : (
-              <>
-                <section className="p-8 max-w-7xl mx-auto dogsection">
-                  <div className="text-center">
-                   
-                    
-      
-                   
-                  </div>
-      
-                  <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 my-10 lg:my-20">
-                    {!searched ? (
-                      dogs.map((dog) => (
-                        <Link
-                          to={`/${dog.name}`}
-                          key={dog.id}
-                          className="bg-slate-700 p-4 rounded hover:bg-slate-600 transition-all duration-200"
-                        >
-                          <article>
-                            <img
-                            src={`https://cdn2.thedogapi.com/images/${dog.reference_image_id}.jpg`}
-                              alt={dog.name}
-                              loading="lazy"
-                              className="rounded md:h-72 w-full object-cover"
-                            />
-                            <h3 className="text-white text-lg font-bold mt-4">
-                             Customer Name : {dog.name}
-                            </h3>
-                            <p className="text-slate-400">Customer Email: {dog.bred_for}</p>
-                          </article>
-                        </Link>
-                      ))
-                    ) : (
-                      <>
-                        {dogs.map((dog) => (
-                          <Link
-                            to={`/${dog.name}`}
-                            key={dog.id}
-                            className="bg-slate-700 p-4 rounded hover:bg-slate-600 transition-all duration-200"
-                          >
-                            <article>
-                              <img
-                                src={`https://cdn2.thedogapi.com/images/${dog.reference_image_id}.jpg`}
-                                alt={dog.name}
-                                className="rounded md:h-72 w-full object-cover"
-                              />
-                              <h3 className="text-white text-lg font-bold mt-4">
-                                {dog.name}
-                              </h3>
-                              <p className="text-slate-400">
-                                Bred For: {dog.bred_for}
-                              </p>
-                            </article>
-                          </Link>
-                        ))}
-                      </>
-                    )}
-                  </div>
-                </section>
-              </>
-            )}
-          </>
-        )
   
 }
 
