@@ -114,7 +114,7 @@ const CustomerList = () => {
   return (
     <div>
     <div className="customer-list">
-      <h2 style={{ textAlign: 'center', marginTop: '5px', fontWeight: 'bold' }}>Pet Management</h2>
+      <h2 style={{ textAlign: 'center', marginTop: '5px', fontSize:'1.4rem'}}>Pet Management</h2>
       <button className="add-button" onClick={handleAdd}>
           Add
         </button>
