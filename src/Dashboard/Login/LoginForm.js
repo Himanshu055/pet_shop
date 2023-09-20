@@ -70,12 +70,10 @@ const LoginForm = ({ onLogin }) => {
           </div>
           {error && <p className="error-message">{error}</p>}
         </form>
-        <div className="fotter">
-          {/* <a>Forgot Password ?</a> */}
-          <button className="register-button" onClick={handleRegister}>
-          Register
-        </button>
-        </div>
+       
+        <p> Create an account? <button className="login-link" onClick={handleRegister}>Register</button></p>
+        {/* {registrationError && <p className="error-message">{registrationError}</p>} */}
+      
       </div>
     </div>
   );
