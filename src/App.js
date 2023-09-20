@@ -35,7 +35,7 @@ function App() {
           <Route path="/login" element={<LoginForm onLogin={handleLogin} />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
+        <Footer  />
       </BrowserRouter>
     </>
   );

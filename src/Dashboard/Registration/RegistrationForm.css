@@ -1,71 +1,182 @@
-/* RegistrationForm.css */
 .registration-container {
+  position: relative;
+  width: 400px;
+  height: 470px;
+  max-width: 400px;
+  max-height: 470px;
+  background: #040717;
+  border-radius: 50px 5px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  margin: 70px auto 0; 
 }
 
-.registration-form {
-  background-color: #f7f7f7;
-  border: 1px solid #ccc;
-  padding: 20px;
-  width: 90%; /* Adjust width for smaller screens */
-  max-width: 400px; /* Set a max-width to prevent overly wide forms */
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.registration-container::before{
+    
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #ee00ff);
+    animation: rotate_border 6s linear infinite;
+
+}
+.registration-container::after{
+    
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    animation: rotate_border 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes rotate_border{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.registration-form{
+    position: absolute;
+    content: '';
+    background-color: #0c1022;
+    border-radius: 50px 5px;
+    inset: 5px;
+    padding: 50px 40px;
+    z-index: 10;
+    color: #00ccff;
+
+} 
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.form-group{
+    margin-top: 40px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+}
+.input_text{
+    width: 95%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00ccff;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #00ccff;
+
+}
+::placeholder{
+    font-size: 15px;
+    color: #00ccff52;
+    letter-spacing: 1px;
+
+}
+.fa{
+    font-size: 20px;
+
+}
+/* Add this CSS to your RegistrationForm.css file */
+.register-button {
+  
+  position: relative;
+    width: 300px;
+    height: 40px;
+    transition: 1s;
+    /* border: 1px solid; */
+    /* margin-top:5%; */
+    
 }
 
-.registration-form h2 {
-  margin: 0 0 15px;
-  text-align: center;
-  color: #333;
+
+
+
+
+
+
+
+.registration-container::before{
+    
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #ee00ff);
+    animation: rotate_border 6s linear infinite;
+
+}
+.registration-container::after{
+    
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    animation: rotate_border 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes rotate_border{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.registration-form{
+    position: absolute;
+    content: '';
+    background-color: #0c1022;
+    border-radius: 50px 5px;
+    inset: 5px;
+    padding: 50px 40px;
+    z-index: 10;
+    color: #00ccff;
+
+} 
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.form-group{
+    margin-top: 40px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+}
+.input_text{
+    width: 95%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00ccff;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #00ccff;
+
+}
+::placeholder{
+    font-size: 15px;
+    color: #00ccff52;
+    letter-spacing: 1px;
+
+}
+.fa{
+    font-size: 20px;
+
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-.submit-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  padding: 10px 15px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.error-message {
-  color: #d9534f;
-  margin-top: 5px;
-}
-
-/* Responsive adjustments */
-
-/* Tablets and larger screens */
-@media screen and (min-width: 768px) {
-  .registration-form {
-    width: 70%;
-  }
-}
-
-/* Desktop screens */
-@media screen and (min-width: 1200px) {
-  .registration-form {
-    width: 50%;
-  }
-}

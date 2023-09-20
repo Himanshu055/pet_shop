@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './RegistrationForm.css'; // Import your CSS stylesheet
 import axios from 'axios';
 
-const RegistrationForm = ({ isAuthenticated }) => {
+const RegistrationForm = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -12,6 +12,12 @@ const RegistrationForm = ({ isAuthenticated }) => {
 
   const handleRegistration = async (event) => {
     event.preventDefault();
+
+    // Validate if any field is empty
+    if (!username || !phoneNumber || !password) {
+      setRegistrationError('All field are required');
+      return;
+    }
 
     try {
       // Check if phone number is already registered
@@ -53,53 +59,53 @@ const RegistrationForm = ({ isAuthenticated }) => {
   return (
     <div className="registration-container">
       <div className="registration-form">
-        {isAuthenticated ? (
-          <p>You already have an account. Please <button className="login-link" onClick={handleLogin}>Login</button></p>
-        ) : (
-          <>
-            <h2>Registration</h2>
-            <form onSubmit={handleRegistration}>
-              <div className="form-group">
-                <label htmlFor="username">Username:</label>
-                <input
-                  type="text"
-                  id="username"
-                  value={username}
-                  placeholder="Enter Username"
-                  onChange={(e) => setUsername(e.target.value)}
-                />
-              </div>
+        <h2>Registration</h2>
+        <form onSubmit={handleRegistration}>
+          <div className="form-group">
+            {/* <label htmlFor="username">Username:</label> */}
+            <input
+              type="text"
+              id="username"
+              className='input_text'
+              value={username}
+              placeholder="Enter Username"
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
 
-              <div className="form-group">
-                <label htmlFor="phoneNumber">Phone Number:</label>
-                <input
-                  type="tel"
-                  id="phoneNumber"
-                  value={phoneNumber}
-                  placeholder="Enter Phone Number"
-                  onChange={(e) => setPhoneNumber(e.target.value)}
-                />
-              </div>
+          <div className="form-group">
+            {/* <label htmlFor="phoneNumber">Phone Number:</label> */}
+            <input
+              type="tel"
+              id="phoneNumber"
+              className='input_text'
+              value={phoneNumber}
+              placeholder="Enter Phone Number"
+              onChange={(e) => setPhoneNumber(e.target.value)}
+            />
+          </div>
 
-              <div className="form-group">
-                <label htmlFor="password">Password:</label>
-                <input
-                  type="password"
-                  id="password"
-                  value={password}
-                  placeholder="Enter Password"
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-              </div>
-              {/* Add other registration form inputs here */}
-              <button type="submit" className="submit-button">
-                Register
-              </button>
-            </form>
-            <p>Already have an account? <button className="login-link" onClick={handleLogin}>Login</button></p>
-            {registrationError && <p className="error-message">{registrationError}</p>}
-          </>
-        )}
+          <div className="form-group">
+            {/* <label htmlFor="password">Password:</label> */}
+            <input
+              type="password"
+              id="password"
+              value={password}
+              className='input_text'
+              placeholder="Enter Password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          {/* Add other registration form inputs here */}
+          <div className="fotter">
+            {/* <a>Forgot Password ?</a> */}
+            <button className="register-button" type='submit'>
+              Register
+            </button>
+          </div>
+        </form>
+        <p>Already have an account? <button className="login-link" onClick={handleLogin}>Login</button></p>
+        {registrationError && <p className="error-message">{registrationError}</p>}
       </div>
     </div>
   );

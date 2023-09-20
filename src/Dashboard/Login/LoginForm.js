@@ -1,6 +1,8 @@
+// Login.js
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './LoginForm.css'; // Import your CSS stylesheet
+import { useNavigate } from 'react-router-dom';
+
 
 const LoginForm = ({ onLogin }) => {
   const navigate = useNavigate();
@@ -39,38 +41,41 @@ const LoginForm = ({ onLogin }) => {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-form">
+    <div className="login_form_container">
+      <div className="login_form">
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="username">Username:</label>
+          <div className="input_group">
+            <i className="fa fa-user"></i>
             <input
               type="text"
-              id="username"
+              placeholder="Username"
+              className="input_text"
               value={username}
-              placeholder='Enter Username'
               onChange={(e) => setUsername(e.target.value)}
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="password">Password:</label>
+          <div className="input_group">
+            <i className="fa fa-unlock-alt"></i>
             <input
               type="password"
-              id="password"
-              placeholder='Enter Password'
+              placeholder="Password"
+              className="input_text"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <button type="submit" className="submit-button">
-            Login
-          </button>
+          <div className="button_group" id="login_button">
+            <button type="submit">Submit</button>
+          </div>
           {error && <p className="error-message">{error}</p>}
         </form>
-        <button className="register-button" onClick={handleRegister}>
+        <div className="fotter">
+          {/* <a>Forgot Password ?</a> */}
+          <button className="register-button" onClick={handleRegister}>
           Register
         </button>
+        </div>
       </div>
     </div>
   );
