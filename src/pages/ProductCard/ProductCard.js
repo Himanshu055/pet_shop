@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
         {/* Loop items */}
         <div className="HPB_100">
           <div className="HPB_img_outer HPB_Grid_web_4 HPB_Grid_mobile_2">
-            <a href="https://headsupfortails.com/products/saras-wholesome-grain-free-chicken-turkey-fresh-dog-food">
+            <a href="#">
               <p>
                 <picture>
                   <source

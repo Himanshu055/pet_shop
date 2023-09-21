@@ -36,7 +36,7 @@ function Home() {
  <section className="product-section">
       <div className="product-container">
         <div className="product-item">
-          <a href="https://headsupfortails.com/collections/harnesses">
+          <a href="#">
             <img
               src="//headsupfortails.com/cdn/shop/files/c3_harness.png?v=1694493183"
               alt="Harnesses"
@@ -48,7 +48,7 @@ function Home() {
         </div>
 
         <div className="product-item">
-          <a href="https://headsupfortails.com/collections/harnesses">
+          <a href="#">
             <img
               src="https://headsupfortails.com/cdn/shop/files/c7_toys.png?v=1694493183"
               alt="Harnesses"
@@ -59,7 +59,7 @@ function Home() {
           
         </div>
         <div className="product-item">
-          <a href="https://headsupfortails.com/collections/harnesses">
+          <a href="#">
             <img
               src="https://headsupfortails.com/cdn/shop/files/c11_grooming.png?v=1694493183"
               alt="Harnesses"
