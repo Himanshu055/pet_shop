@@ -1,4 +1,4 @@
-/* CustomerList.css */
+  /* CustomerList.css */
 
 .customer-list {
   max-height: 500px;
@@ -121,6 +121,7 @@
   .customer-image img {
     margin-right: 10px;
     margin-bottom: 0;
+    margin-left: -25%
   }
 
   .button-group {
